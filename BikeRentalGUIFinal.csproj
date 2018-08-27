@@ -69,6 +69,7 @@
       <DependentUpon>DeleteWorkerScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Fine.cs" />
+    <Compile Include="Globals.cs" />
     <Compile Include="InsertBicycleScreen.cs">
       <SubType>Form</SubType>
     </Compile>

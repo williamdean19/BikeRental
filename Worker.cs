@@ -54,9 +54,7 @@ namespace BikeRentalGUIFinal
         public Worker(string banId)
             : base()
         {
-            connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-               @"Data source= C:\Users\Will\Documents\visual studio 2013\Projects\BikeRentalGUIFinal\BikeRentalGUIFinal" +
-               @"\BicycleRental.accdb";
+            connectionString = Globals.Access2013ConnectionString;
 
             string queryString = "SELECT * FROM Worker WHERE (BannerID = '" + banId + "')";
             List<Object> results = getValues(queryString);
