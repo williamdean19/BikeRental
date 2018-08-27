@@ -29,17 +29,13 @@ namespace BikeRentalGUIFinal
         public Vehicle()
             : base()
         {
-            connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-                @"Data source= C:\Users\Will\Documents\visual studio 2013\Projects\BikeRentalGUIFinal\BikeRentalGUIFinal" +
-                @"\BicycleRental.accdb";
+            connectionString = Globals.Access2013ConnectionString;
         }
         public Vehicle(string bikeMake, string modelNumber, string serialNumber, string color, string description, string location, string physicalCond, string notes, string status, string dateStatusUpdated)
             :base()
         {
-            connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-                @"Data source= C:\Users\Will\Documents\visual studio 2013\Projects\BikeRentalGUIFinal\BikeRentalGUIFinal" +
-                @"\BicycleRental.accdb";
-            
+            connectionString = Globals.Access2013ConnectionString;
+
             this.BikeMake = bikeMake;
             this.ModelNumber = modelNumber;
             this.SerialNumber = serialNumber;

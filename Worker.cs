@@ -29,16 +29,12 @@ namespace BikeRentalGUIFinal
         public Worker()
             : base()
         {
-            connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-                @"Data source= C:\Users\Will\Documents\visual studio 2013\Projects\BikeRentalGUIFinal\BikeRentalGUIFinal" +
-                @"\BicycleRental.accdb";
+            connectionString = Globals.Access2013ConnectionString;
         }
         public Worker(string bannerId, string firstName, string lastName, string phoneNumber, string emailAddress, string credential, string initialRegistrationDate, string workerPassword, string notes, string status)
             : base()
         {
-            connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-                @"Data source= C:\Users\Will\Documents\visual studio 2013\Projects\BikeRentalGUIFinal\BikeRentalGUIFinal" +
-                @"\BicycleRental.accdb";
+            connectionString = Globals.Access2013ConnectionString;
 
             this.BannerId = bannerId;
             this.FirstName = firstName;

@@ -46,17 +46,13 @@ namespace BikeRentalGUIFinal
         public Fine()
             : base()
         {
-            connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-                @"Data source= C:\Users\Will\Documents\visual studio 2013\Projects\BikeRentalGUIFinal\BikeRentalGUIFinal" +
-                @"\BicycleRental.accdb";
+            connectionString = Globals.Access2013ConnectionString;
         }
 
         public Fine(int borrowerId, string fineAmt, string dateFineImposed, string status)
             : base()
         {
-            connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-                @"Data source= C:\Users\Will\Documents\visual studio 2013\Projects\BikeRentalGUIFinal\BikeRentalGUIFinal" +
-                @"\BicycleRental.accdb";
+            connectionString = Globals.Access2013ConnectionString;
 
             this.BorrowerId = borrowerId;
             this.FineAmt = fineAmt;

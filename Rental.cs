@@ -83,17 +83,13 @@ namespace BikeRentalGUIFinal
         public Rental()
             : base()
         {
-            connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-                @"Data source= C:\Users\Will\Documents\visual studio 2013\Projects\BikeRentalGUIFinal\BikeRentalGUIFinal" +
-                @"\BicycleRental.accdb";
+            connectionString = Globals.Access2013ConnectionString;
         }
 
         public Rental(int vehicleId, int renterId, string dateRented, string timeRented, string dateDue, string timeDue, string dateRet, string timeRet, int outId, int inId)
             : base()
         {
-            connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;" +
-                @"Data source= C:\Users\Will\Documents\visual studio 2013\Projects\BikeRentalGUIFinal\BikeRentalGUIFinal" +
-                @"\BicycleRental.accdb";
+            connectionString = Globals.Access2013ConnectionString;
 
             this.VehicleId = vehicleId;
             this.RenterId = renterId;
