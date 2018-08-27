@@ -11,6 +11,8 @@ using System.Threading.Tasks;
  * 4/15/2016 
  */
 
+    //this is a comment
+
 namespace BikeRentalGUIFinal
 {
     class Fine : Persistable
